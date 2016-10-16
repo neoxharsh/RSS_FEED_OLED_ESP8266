@@ -108,7 +108,9 @@ Button Select - D3
 Button A     - D4
 Common pin from both button to GND of NodeMCU
 ```
-
+## Schematics
+![alt tag](https://github.com/neoxharsh/RSS_FEED_OLED_ESP8266/blob/master/images/schematics.jpg)
+ 
 Then open the Arduino IDE, and make sure that you have already installed the ESP8266 Arduino core according to https://github.com/esp8266/Arduino
 
 Now open the sketch from the Arduino folder, and make sure you copy all the libraries to the Documents/Arduino/library folder or install following library using the library manager
