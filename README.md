@@ -23,6 +23,13 @@ Now enter root as username and for the password, you need to go to your email as
 apt-get update
 apt-get upgrade
 ```
+## Setting up Python
+Python is not installed by default, so we need to manual install it, so enter the following command in the terminal to install python 2.7 and pip.
+```
+apt-get install python
+apt-get install python-pip
+```
+
 
 ## Setting up mosquitto client
 The client can be installed by issuing the following command,
@@ -114,5 +121,43 @@ Now just change the wifi ssid and password, and for the mqtt client username and
 
 Now connect a USB cable to the NodeMCU and the computer, wait for a while till all the drivers are installed. Now press Ctrl-K, this will open the current sketch folder. create a data folder if it is not present and copy the files from the data folder in my repository to your data folder, it depends if you are opening the example from my repository than no need to follow any of this step if not than you have to follow this step. Now in the Arduino IDE select Tools-> ESP8266 Sketch Data Upload. This will upload all the content from the data folder to the inbuilt flash. After this is sucessfully done, upload the sketch. Now only the splash screen will show up, you need to wait till "Server Connected" is shown. This is end of the Hardware setup. 
 
+## Starting the python client
+Fire up the putty client and login in to your droplet and now we need to install an app called byobu, this can be installed as follow
+```
+apt-get install byobu
+```
+now type this command to create first python file that contains the wrapper function for our project.
+```
+mkdir rss_python
+cd rss_python
+nano rssfeed_python_functions.py
+```
+now copy the content from the rssfeed_python_functions.py file in the Python Code folder and right click on the terminal window, this will copy the code to the file, hit Ctrl-X followed by Y and then Enter, this will close the file. After entering this command
+
+```
+nano feed.py
+```
+
+type this
+
+```
+#!/usr/bin/python 
+```
+now as above copy the content of the feed.py file and copy it in this file. 
+
+Now let us make this file executable, to do this enter the following command.
+
+```
+chmod +x feed.py
+```
+
+Now we need to run this program in the background so for this enter the following command
+
+```
+byobu
+./feed.py &
+```
+
+Now you close the window, and the program will keep on running in the background.
 ![alt tag](https://github.com/neoxharsh/RSS_FEED_OLED_ESP8266/blob/master/images/Project_Image_1.jpg?raw=true)
 ![alt tag](https://github.com/neoxharsh/RSS_FEED_OLED_ESP8266/blob/master/images/Project_Image_3.jpg)
