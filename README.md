@@ -104,7 +104,7 @@ D/C   -   D1
 RES   -   3v3
 
 Button Select - D3
-Button Ok     - D4
+Button A     - D4
 Common pin from both button to GND of NodeMCU
 ```
 
@@ -159,5 +159,9 @@ byobu
 ```
 
 Now you close the window, and the program will keep on running in the background.
+Now on click the A button to enter the menu. Once you are in the menu, you can select the current feed by clicking the other select button, or you can move forward by pressing the A button, A button will keep on scrolling through the list. The last item in the list is the OTA mode, once you select it, the Module will enter OTA mode and will be ready to get update through wifi, provided the Arduino IDE and NodeMCU are connected to the same network. 
+
+
+## Screenshot
 ![alt tag](https://github.com/neoxharsh/RSS_FEED_OLED_ESP8266/blob/master/images/Project_Image_1.jpg?raw=true)
 ![alt tag](https://github.com/neoxharsh/RSS_FEED_OLED_ESP8266/blob/master/images/Project_Image_3.jpg)
