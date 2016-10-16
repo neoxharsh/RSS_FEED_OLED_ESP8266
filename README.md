@@ -1,7 +1,7 @@
 # RSS FEED OLED ESP8266
 ESP8266 Based RSS Feed on color OLED
 
-An extremely detailed version of this project is available on hackster.io
+An extremely detailed version of this project is available on [hackster.io](https://goo.gl/SgrCEN)
 
 This is an example of RSS Feed implementaion on ESP8266 using MQTT as trasnport protocol and SSD1331 based color OLED screen as display
 
