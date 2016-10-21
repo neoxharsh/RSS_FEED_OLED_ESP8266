@@ -11,7 +11,9 @@ This is an example of RSS Feed implementaion on ESP8266 using MQTT as trasnport 
 The main arduino code is in the respective folder. 
 The Ardiuno libraries that are used are kept in the folders too, but they are also available in the library manager in the IDE
 
-
+## Video
+<iframe width="854" height="480" src="https://www.youtube.com/embed/I9Fq4Cdpij0" frameborder="0" allowfullscreen></iframe>
+https://www.youtube.com/embed/I9Fq4Cdpij0
 ## Mosquitto server hosting on Digital Ocean
 The mosquitto server is hosted on Ubuntu on DigitalOcean, A montly plan can be created by as low as 5$. You can create an account using 
 https://m.do.co/c/35f511b6a29b, if you use this link, I will get some credit, which I can use for my next project, but you are free to create your own account directly. 
